@@ -1,4 +1,4 @@
-*, * :: before, *:: after {
+*, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
     font-weight: normal;
@@ -27,11 +27,32 @@ body {
     background-color: aliceblue;
 }
 
-.calculator-grid > button hover {
-    background-color: blueviolet;
+.calculator-grid > button:hover {
+    background-color: lightcyan;
 }
 
 .span-two {
     grid-column: span 2;
 }
 
+.output {
+    grid-column: 1/-1;
+    background-color:rgb(219, 161, 161);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color:rgb(230, 138, 0);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color:rgb(76, 25, 143);
+    font-size: 2.5rem;
+}
