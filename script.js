@@ -1,0 +1,7 @@
+const numberButtons = document.querySelectorAll('[calculator-number]')
+const performanceButtons = document.querySelectorAll('[calculator-performance]')
+const equalsButton = document.querySelector('[calculator-equals]')
+const deleteButton = document.querySelector('[calculator-delete]')
+const allClearButton = document.querySelector('[calculator-all-clear]')
+const previousOperandButton = document.querySelector('[calculator-previous-operand]')
+const currentOperandButton = document.querySelector('[calculator-current-operand]')
