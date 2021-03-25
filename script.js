@@ -19,7 +19,8 @@ allDelete(){
 }
 //adds a number to the screen 
 appendNumber(number) {
-    this.currentOperand = number
+    if(number === '.' && this.currentOperand.includes('.')) return
+    this.currentOperand = this.currentOperand.toString() + number.toString()
 }
 //this is what happens anytime a user clicks on a function 
 chooseOperation(operation) {
