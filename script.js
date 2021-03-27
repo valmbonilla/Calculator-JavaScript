@@ -54,13 +54,13 @@ numberButtons.forEach(button => {
 })
 
 
-// const val = {
-//     getClothes = () => {
-// console.log("clothes")
-//     },
-//     getCoffee = () => {
-//         console.log("get coffee")
-//     }
-// }
+const val = {
+    getClothes = () => {
+console.log("clothes")
+    },
+    getCoffee = () => {
+        console.log("get coffee")
+    }
+}
 
-// val.getCoffee();
+val.getCoffee();
